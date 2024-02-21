@@ -1,0 +1,350 @@
+.sidebarnav {
+    padding: 40px 15px;
+    display: flex;
+    width: 300px;
+    position: fixed;
+    flex-direction: column;
+    background-color: rgb(245 252 255);
+    border-right: 1px solid rgb(228, 228, 228);
+    height: 77.9%;
+    max-height: 88vh;
+    overflow-y: auto;
+    box-shadow: 2px 1px 5px rgb(212, 212, 212);
+    top: 90px;
+    left: 0;
+    z-index: 97;
+    /* Adjust z-index as needed */
+    transition: transform 0.3s ease;
+
+}
+
+
+.sidebarnav.hide {
+    transform: translateX(-100%);
+}
+
+
+.sidebarnav::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.toggleme {
+    /* display: none; */
+    border: 1px solid rgb(214, 214, 214);
+    width: 30px;
+    position: fixed;
+    left: 290px;
+    top: 130px;
+    z-index: 200;
+    transform: translateX(0%);
+}
+
+.toggleme .fa-arrow-right {
+    display: none;
+}
+
+.toggleleft .fa-arrow-left {
+    display: none;
+}
+
+.toggleleft .fa-arrow-right {
+    display: block;
+}
+
+.toggleleft {
+    border: 1px solid rgb(214, 214, 214);
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 10px !important;
+    top: 130px !important;
+}
+
+.sidebarnav::-webkit-scrollbar-thumb {
+    background-color: rgb(0 46 73);
+}
+
+.sidebarnav h6 {
+    color: rgb(0, 0, 0);
+}
+
+.sidebarMain {
+    margin-bottom: 100px;
+    display: flex;
+    margin-top: 90px
+}
+
+input {
+    /* margin: 0px 10px; */
+    accent-color: black;
+}
+
+.sidebarnav ul li span {
+    margin-left: 5px;
+}
+
+.sidebarnav ul li {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+#sidebarGender {
+    display: none;
+}
+
+.sidebarnav.show {
+    left: 0;
+    /* Show the sidebar */
+}
+
+.show {
+    display: block !important;
+    /* Show the element */
+    opacity: 1;
+    /* Make the element fully visible */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for opacity */
+}
+
+.main-content {
+    transition: margin-left 0.3s ease;
+    /* Smooth transition for adjusting the main content */
+}
+
+/* When the sidebar is open, shift the main content to the right */
+.sidebarnav.show+.main-content {
+    margin-left: 250px;
+    /* Same as the width of the sidebar */
+}
+
+.dflexx {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dflexx button {
+    border: none;
+    background-color: rgb(245 252 255);
+    color: rgb(0, 0, 0);
+}
+
+.BarMin_Height {
+    padding: 20px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    height: fit-content;
+
+}
+
+.BarMin_Height .navDrop {
+    display: none;
+}
+
+.activee {
+    display: block !important
+}
+
+.disabled {
+    display: none
+}
+
+#clearallBtn {
+    padding-top: 15px;
+}
+
+#clearallBtn button {
+    margin-top: -5px;
+    font-weight: 700;
+    color: red;
+}
+
+.getCheckedBoxes {
+    display: flex;
+    background-color: none;
+
+    margin: 10px;
+}
+
+.elementsDetected {
+    background-color: black;
+    color: white;
+    margin: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.arrowupdown {
+    margin-top: -10px;
+}
+
+.downsPg {
+
+    transform: rotate(90deg);
+}
+
+.price-field {
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.price-field input {
+
+    padding: 2px 10px;
+    border-radius: 15px;
+}
+
+.range-input {
+    color: white;
+    margin: 10px 0px 0px 10px;
+}
+
+.bodyMainContent {
+    min-width: 300px;
+    margin: 20px 0 0 26%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyMainContentleft {
+    margin: 20px 0 0 8% !important;
+}
+
+.max-range {
+    color: black;
+}
+
+.price-field span {
+    color: black;
+}
+
+.getCheckedBoxes {
+    margin-left: 25px;
+    background-color: white;
+    height: auto;
+}
+
+.productsLayout,
+.getCheckedBoxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productsLayout .card {
+    min-width: 300px;
+    margin: 30px 0 0 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle-btn svg {
+    fill: #333;
+    /* Adjust color as needed */
+}
+
+/* Optional: Hover effect for toggle button */
+.toggle-btn:hover svg {
+    fill: #666;
+    /* Adjust hover color as needed */
+}
+
+/* .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+} */
+@media (min-width:943px) and (max-width:1286px) {
+    .bodyMainContent {
+        margin-left: 30%;
+    }
+
+    .productsLayout .card {
+        min-width: 220px;
+    }
+}
+
+@media (min-width:800px) and (max-width:943px) {
+    .bodyMainContent {
+        margin-left: 37%;
+    }
+
+    .productsLayout .card {
+        min-width: 200px;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 26%
+    }
+
+    .productsLayout .card {
+        margin: 30px 0 0 20px
+    }
+}
+
+@media (min-width:600px) and (max-width:799px) {
+    .bodyMainContent {
+        margin-left: 50%;
+    }
+
+    .productsLayout .card {
+        min-width: 230px;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 26%
+    }
+
+    .productsLayout .card {
+        margin: 30px 0 0 20px
+    }
+
+    .sidebarnav {
+        width: 200px;
+    }
+
+    .toggleme {
+        left: 190px;
+    }
+}
+
+@media (min-width:360px) and (max-width:600px) {
+    .bodyMainContent {
+        margin-left: 50%;
+    }
+
+    .productsLayout .card {
+        min-width: 200px;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 24%
+    }
+
+    .productsLayout .card {
+        margin: 30px 0 0 20px
+    }
+
+    .sidebarnav {
+        width: 180px;
+    }
+
+    .bodyMainContentleft {
+        margin: 20px 0 0 9% !important;
+    }
+
+    .toggleme {
+        left: 160px;
+    }
+}
