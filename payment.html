@@ -159,7 +159,8 @@
                 </li>
                 <li>
                   <div class="loginRegisterShow">
-                    <a href="login.html">Login/</a><a href="#">Register</a>
+                    <a href="login.html">Login</a
+                    ><a class="headerRegister" href="#">Register</a>
                   </div>
                 </li>
               </ul>
@@ -405,7 +406,7 @@
                       <img src="assets/paymenticons/phonepay.png" alt="" />
                       <span>PHONE PAY</span>
                     </div>
-                    <a id="payNowbtn1" href="#"
+                    <a style="margin-top: 0" id="payNowbtn1" href="#"
                       ><button class="cartPricingPlaceO">PAY NOW</button></a
                     >
                   </li>
@@ -831,7 +832,7 @@
 
               <div class="season_content">
                 <div>
-                  <h6>SELECT EMI OPTION</h6>
+                  <h6>SELECT NET BANKING OPTION</h6>
                   <ul>
                     <li>
                       <div class="season_content_flex2">
@@ -951,7 +952,7 @@
             </div>
           </div>
         </div>
-        <div class="cart2">
+        <div class="cart2" style="border: 0.5px solid #e9e9e9">
           <div class="cart2Coupon">
             <h6>COUPONS</h6>
             <i class="fa-solid fa-ticket"></i><span> Apply Coupons</span>
@@ -1043,12 +1044,16 @@
       <div
         class="payment-options footer-module"
         style="
+          position: fixed;
+          bottom: 0px;
+          width: 100%;
           text-align: center;
           font-size: 40px;
           height: 100px;
           height: 70px;
           padding: 10px 0px;
           margin-top: 50px;
+          z-index: 100;
         "
       >
         <span><i class="fa-brands fa-cc-stripe"></i></span>

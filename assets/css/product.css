@@ -12,7 +12,7 @@
     box-shadow: 2px 1px 5px rgb(212, 212, 212);
     top: 90px;
     left: 0;
-    z-index: 97;
+    z-index: 1;
     /* Adjust z-index as needed */
     transition: transform 0.3s ease;
 
@@ -37,7 +37,7 @@
     position: fixed;
     left: 290px;
     top: 130px;
-    z-index: 200;
+    z-index: 3;
     transform: translateX(0%);
 }
 
