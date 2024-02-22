@@ -381,7 +381,8 @@ li {
     }
 
     .toggleme {
-        left: 160px;
+        top: 115px;
+        left: 300px;
     }
 
     .payment-options {

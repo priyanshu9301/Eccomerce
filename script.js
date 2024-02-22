@@ -329,15 +329,13 @@ function addToWishlist() {
     // Set the inner HTML of the wishlist item with the product information
     wishlistItem.innerHTML = `
       <p>${productName} added to wishlist!</p>
-      <button class="remove-item" data-name="${productName}" onclick="removeFromWishlist(this)">Remove</button>
+      <button class="remove-item" data-name="${productName}" onclick="removeFromWishlist(this)"><i class="fas fa-times"></i></button>
     `;
 
     // Append the wishlist item to the wishlist container
     var wishlistContainer = document.getElementById("wishlistProduct");
     wishlistContainer.appendChild(wishlistItem);
 
-    // Show alert
-    alert(productName + " added to wishlist!");
 }
 
 function removeFromWishlist(button) {
@@ -349,9 +347,6 @@ function removeFromWishlist(button) {
 
     // Remove the wishlist item from the container
     wishlistItem.parentNode.removeChild(wishlistItem);
-
-    // Show alert
-    alert(productName + " removed from wishlist!");
 }
 
 
@@ -445,6 +440,7 @@ function toggleSidebar() {
 }
 
 //
+// 
 
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize count
@@ -467,7 +463,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const wishlistDropdown = document.getElementById('wishlistDropdown');
 
         wishlistProduct.innerHTML += `
-            <div class="wishlist-item" data-name="${product.name}">
+            <div class="wishlist-item" style=" background-color: #eaeaea" data-name="${product.name}">
                 <img src="${product.image}" alt="${product.name}" width="30" height="50">
                 <div class="wishlist-item-details">
                     <p>${product.name}</p>
@@ -515,7 +511,19 @@ document.addEventListener('DOMContentLoaded', function () {
     function getProductDetails(button) {
         const productCard = button.closest('.card');
         const productName = productCard.querySelector('.card-text').innerText;
+
+        // Remove all <span> elements inside .productPrice
+        const productPrices = productCard.querySelectorAll('.productPrice');
+        productPrices.forEach(productPrice => {
+            const productPriceSpans = productPrice.querySelectorAll('span');
+            productPriceSpans.forEach(span => {
+                span.remove();
+            });
+        });
+
+        // Get the text content of the .productPrice
         const productPrice = productCard.querySelector('.productPrice').innerText;
+
         const productImage = productCard.querySelector('img').src;
 
         return {
@@ -539,11 +547,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-
-//
-// 
-
 
 
 

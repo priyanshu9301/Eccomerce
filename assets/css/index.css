@@ -626,8 +626,9 @@ a {
    }
 
    .banner a {
-      left: 40%;
-      top: 70px;
+
+      left: 0;
+
    }
 }
 
@@ -976,6 +977,7 @@ footer i {
 
 .tab-pane-cards .card {
    max-width: 300px;
+   min-width: 295px;
    margin: 0 0 0 10px;
    margin-top: 30px;
 }
@@ -1100,9 +1102,7 @@ footer i {
       width: 280px !important;
    } */
 
-   .banner a {
-      left: 20%;
-   }
+
 }
 
 /* product description */
@@ -1719,6 +1719,10 @@ footer i {
    color: red;
 }
 
+.breadcrumb-item.active {
+   color: red;
+}
+
 .cartNav {
    text-align: center;
    background-color: rgb(0 46 73);
@@ -2129,6 +2133,7 @@ footer i {
    margin-top: 20px;
 }
 
+
 @media screen and (max-width:1127px) {
    .cart1 {
       width: 100%;
@@ -2146,6 +2151,8 @@ footer i {
       padding: 0px 10px 0px 0px;
       margin: 0;
    }
+
+
 
    .cartProducts {
       padding: 10px 10px 10px 0px;
@@ -2183,7 +2190,7 @@ footer i {
    background-color: black;
    color: white;
    padding: 0px 10px;
-   width: 200px;
+   width: 170px;
    margin: -5px;
    margin-left: 35px
 }
@@ -2246,14 +2253,14 @@ footer i {
    left: 2px;
    top: 0px;
    background-color: rgba(255, 255, 255, 0);
-   color: rgb(255, 255, 255);
+   color: rgb(255, 0, 0);
    width: 15px;
    height: 15px;
    border-radius: 50%;
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 10px;
+   font-size: 12px;
    font-weight: 900;
 }
 
@@ -2264,6 +2271,7 @@ footer i {
 }
 
 #wishlistProduct {
+   height: 400px;
    position: absolute;
    right: 220px;
    top: 80px;
@@ -2275,6 +2283,11 @@ footer i {
       right: 20px;
       top: 120px;
    }
+
+   .cartNav {
+      padding: 50px 0 60px 0px;
+   }
+
 }
 
 .modalcoupon {
@@ -2310,6 +2323,10 @@ footer i {
       font-size: 25px !important;
    }
 
+   .productDescSlider {
+      height: 450px;
+   }
+
    .loginDiv form {
       margin: 30px;
    }
@@ -2328,7 +2345,7 @@ footer i {
    }
 
    .cartNav {
-      padding-top: 20px;
+      padding: 20px 0 50px 0;
    }
 
 }
