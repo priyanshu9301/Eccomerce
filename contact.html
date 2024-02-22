@@ -203,23 +203,51 @@
           <h5>Contact Us</h5>
           <p>We're Here To Help You</p>
           <div class="contactFname">
-            <input type="text" placeholder="Enter Your Full Name" />
+            <div class="input-group">
+              <div class="input-group-text" id="btnGroupAddon">Name</div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Full Name"
+                aria-label="Input group example"
+                aria-describedby="btnGroupAddon"
+              />
+            </div>
           </div>
           <div class="contactFnumber">
-            <input type="number" placeholder="Enter Your Number" />
+            <div class="input-group">
+              <div class="input-group-text" id="btnGroupAddon">+91</div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Number"
+                aria-label="Input group example"
+                aria-describedby="btnGroupAddon"
+              />
+            </div>
           </div>
           <p>OR</p>
           <div class="contactFemail">
-            <input type="email" important placeholder="Enter Your Email" />
+            <div class="input-group">
+              <div class="input-group-text" id="btnGroupAddon">Email</div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Email"
+                aria-label="Input group example"
+                aria-describedby="btnGroupAddon"
+              />
+            </div>
           </div>
           <div class="contactFtextarea">
-            <textarea
-              name=""
-              id=""
-              cols="35"
-              rows="2"
-              placeholder="Please Enter the Issue here"
-            ></textarea>
+            <div class="input-group">
+              <span class="input-group-text">Issue</span>
+              <textarea
+                class="form-control"
+                aria-label="Enter Your Issue Here"
+                placeholder="Enter Your Issue Here"
+              ></textarea>
+            </div>
           </div>
 
           <button type="submit" id="continue">Continue</button>
