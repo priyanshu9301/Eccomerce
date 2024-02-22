@@ -196,11 +196,15 @@
     </header>
     <section style="display: flex; flex-direction: column">
       <div class="sidebarMain">
-        <button class="toggleme" id="sidenavtoggler" onclick="toggleSidebar()">
+        <button
+          class="toggleleft"
+          id="sidenavtoggler"
+          onclick="toggleSidebar()"
+        >
           <i class="fa-solid fa-arrow-left"></i
           ><i class="fa-solid fa-arrow-right"></i>
         </button>
-        <div class="sidebarnav" id="sidebar">
+        <div class="sidebarnav hide" id="sidebar">
           <!--  -->
           <div class="dflexx" id="clearallBtn">
             <h6>FILTERS</h6>

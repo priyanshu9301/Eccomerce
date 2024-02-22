@@ -2304,3 +2304,9 @@ footer i {
    color: #000000;
    font-weight: 600;
 }
+
+@media (min-width:360px) and (max-width:490px) {
+   .payment-options {
+      font-size: 25px !important;
+   }
+}
