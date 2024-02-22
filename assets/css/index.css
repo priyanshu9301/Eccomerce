@@ -2327,4 +2327,8 @@ footer i {
       gap: 0px;
    }
 
+   .cartNav {
+      padding-top: 20px;
+   }
+
 }
