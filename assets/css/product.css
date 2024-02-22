@@ -350,10 +350,16 @@ li {
     }
 }
 
-@media (min-width:360px) and (max-width:490px) {
+@media (min-width:300px) and (max-width:490px) {
     .bodyMainContent {
         margin: 20px 0 0 10% !important;
 
+    }
+
+    .productsLayout {
+        margin: 20px 0 0 0;
+        column-gap: 20px;
+        row-gap: 10px;
     }
 
     .productsLayout .card {
@@ -372,11 +378,11 @@ li {
 
     .productsLayout .card .Cardimgdiv .col-lg-3 {
         flex: 0 0 auto;
-        width: 24%
+        width: 24%;
     }
 
     .productsLayout .card {
-        margin: 30px 0 0 20px
+        margin: 0
     }
 
     .sidebarnav {

@@ -2305,8 +2305,25 @@ footer i {
    font-weight: 600;
 }
 
-@media (min-width:360px) and (max-width:490px) {
+@media (min-width:300px) and (max-width:490px) {
    .payment-options {
       font-size: 25px !important;
+   }
+
+   .loginDiv form {
+      margin: 30px;
+   }
+
+   .loginDiv {
+      width: 300px;
+   }
+
+   .gallery div {
+      width: 300px !important;
+   }
+
+   .gallery {
+      grid-template-columns: repeat(6, 49px);
+      gap: 0px;
    }
 }
